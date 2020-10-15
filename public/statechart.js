@@ -1,4 +1,4 @@
-import { Machine, interpret } from "xstate";
+const { Machine, interpret } = window.XState;
 
 const machine = Machine({
   id: "machine",
@@ -12,7 +12,7 @@ const machine = Machine({
     meta: {
       on: {
         METAPRESSED: "edit",
-        CHARPRESSED:  
+        // CHARPRESSED:
       },
     },
   },

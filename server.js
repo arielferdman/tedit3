@@ -1,5 +1,6 @@
 const express = require("express");
-const path = require("path");
+const child = require("child_process");
+const fs = require("fs");
 
 const app = express();
 
@@ -12,3 +13,14 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server listening on port: ${PORT}`));
+
+const watcher = fs.watch("public/statechart.js");
+
+let currentChild = child.fork("public/statechart.js");
+
+watcher.on("change", () => {
+  if (currentChild) {
+    currentChild.kill();
+  }
+  currentChild = child.fork("server.js");
+});
