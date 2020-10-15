@@ -1,0 +1,90 @@
+{
+    "root": {
+        "name": "Text editor",
+        "style": {
+            "strokeWidth": 6,
+            "name": "Branch 4",
+            "fontSize": 40,
+            "backgroundColor": "#29615D",
+            "fontColor": "#61839B",
+            "strokeColor": "#08283F",
+            "margin": {
+                "top": 10,
+                "bottom": 10,
+                "left": 10,
+                "right": 10
+            },
+            "rx": 10,
+            "hotkey": "ctrl+alt+4"
+        },
+        "children": {
+            "left": [
+                {
+                    "name": "snippets",
+                    "style": {
+                        "name": "Branch 3",
+                        "fontSize": 20,
+                        "backgroundColor": "#333577",
+                        "fontColor": "#7071A9",
+                        "strokeColor": "#0E0F44",
+                        "strokeWidth": 6,
+                        "margin": {
+                            "bottom": 10,
+                            "top": 10,
+                            "left": 10,
+                            "right": 10
+                        },
+                        "rx": 10,
+                        "hotkey": "ctrl+alt+3"
+                    },
+                    "children": [
+                        {
+                            "name": "using letters",
+                            "style": {
+                                "name": "Branch 3",
+                                "fontSize": 20,
+                                "backgroundColor": "#333577",
+                                "fontColor": "#7071A9",
+                                "strokeColor": "#0E0F44",
+                                "strokeWidth": 6,
+                                "margin": {
+                                    "bottom": 10,
+                                    "top": 10,
+                                    "left": 10,
+                                    "right": 10
+                                },
+                                "rx": 10,
+                                "hotkey": "ctrl+alt+3"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "right": [
+                {
+                    "name": "client/server",
+                    "style": {
+                        "name": "Branch 1",
+                        "fontSize": 20,
+                        "backgroundColor": "#AA7939",
+                        "fontColor": "#F2C892",
+                        "strokeColor": "#623A06",
+                        "strokeWidth": 6,
+                        "margin": {
+                            "bottom": 10,
+                            "top": 10,
+                            "left": 10,
+                            "right": 10
+                        },
+                        "rx": 10,
+                        "hotkey": "ctrl+alt+1"
+                    }
+                },
+                {
+                    "name": "Unnamed element",
+                    "style": {}
+                }
+            ]
+        }
+    }
+}
